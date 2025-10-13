@@ -1,0 +1,292 @@
+/*Variables Boostrap*/
+
+/*nav*/
+.nav-link {
+    color: white;
+    font-size: 1.5em;
+}
+.nav-link:hover {
+    color: rgba(224, 1, 1, 0.836);
+    border-radius: 5px;
+}
+.active {
+    color: rgba(224, 1, 1, 0.836);
+    border-radius: 5px;;
+}
+
+/*Card*/
+
+.card-dark {
+    background-color: rgb(26, 26, 26);
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.card-dark:hover {
+    box-shadow: 0 0 80px rgba(161, 0, 0, 0.877);
+    transform: scale(1.05);
+}
+.card-dark svg {
+    margin-top: 2vh;
+    align-self: center;
+    margin-bottom: 2vh;
+}
+
+.skills svg {
+    margin-left: 2vh;
+}
+.skills {
+    text-align: center;
+    padding: auto;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    transition: ease-in-out 0.3s;
+}
+
+.skills:hover {
+    box-shadow: 0 0 80px rgba(161, 0, 0, 0.877);
+    transform: scale(1.1);
+}
+
+.skills:hover p {
+    color: rgba(255, 255, 255, 0.636);
+    transition: ease-in-out 0.3s;
+    text-shadow: 0 0 15px rgb(255, 255, 255);;
+}
+
+.low {color: rgb(192, 82, 42); margin :auto;}
+.mid {color: rgb(4, 82, 185); margin: auto;}
+.high{color: rgb(0, 189, 0); margin: auto;}
+
+.skill-name{
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.offcanvas-title{
+    font-size: 3vh;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    
+}
+
+
+/* --- Estructura ---- */
+body {
+    background-color: rgba(27, 27, 27, 0.932);
+    font-family: 'Times New Roman';
+    display: grid;
+    justify-items: center;
+}
+
+header {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer {
+    background-color: rgba(24, 24, 24);
+    color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-size: 2vh;
+}
+
+/* Contenedores */
+.txt-cont{
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    color: white;
+    font-size: 1.5em;   
+}
+
+.txt-cont span{text-shadow: 0 0 10px rgb(255, 255, 255);}
+
+.cont-lateral{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin: 2em 0;
+    /* AÑADE ESTO: Fuerza a los items (cards) a estirarse a la misma altura */
+    align-items: stretch;
+}
+
+.cont-skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*  columnas */
+    gap: 2em;
+    margin: auto;
+    margin-bottom: 3vh;
+    align-items: stretch;
+    padding: auto;
+}
+
+.yuuruii {
+    background-color: rgba(27, 27, 27, 0.678);
+    border-radius: 5px;
+    width: 90%;
+    align-content: center;
+    height: auto;
+}
+
+.yuuruii h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0.5em 0;
+    font-family: 'Times New Roman';
+    text-shadow: 0 0 8px rgba(161, 0, 0, 0.973);
+    text-decoration: underline;
+    color: white;
+}
+.yuuruii h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.5em 0;
+    font-family: 'Times New Roman';
+    text-shadow: 0 0 8px rgba(161, 0, 0, 0.973);
+    text-decoration: underline;
+    color: white;
+}
+
+.offcanvas{
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+
+/* Tarjetas de projectos y emprendimientos*/
+.tarjeta{
+    background-color: rgba(27, 27, 27, 0.678);
+    border-radius: 5px;
+    width: 300px;
+    height: 350px;
+    transition: ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta:hover{
+    box-shadow: 0 0 80px rgba(161, 0, 0, 0.877);
+    transform: scale(1.05);
+}
+
+.tarjeta h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.5em 0;
+    font-family: 'Times New Roman';
+    text-shadow: 0 0 8px rgba(161, 0, 0, 0.973);
+    text-decoration: underline;
+    color: white;
+}
+
+.projectos{
+    height: 280px;
+    width: 200px;
+    font-size: 1vh;
+}
+
+.projectos-title{
+    text-decoration: underline;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*Elementos*/
+
+#icono {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 0 0 120px rgba(161, 0, 0, 0.877);
+}
+
+#tarjeta-img {
+    width: 299px;
+    height: 280px;
+    border-radius: 5px 5px 0 0;
+}
+.projectos-img {
+    width: 199px;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+    align-self: center;
+    margin-top: 1vh;
+}
+
+/* Iconos de redes sociales*/
+
+/* ===== ICONOS DE REDES SOCIALES ===== */
+.icons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.icons a {
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--glass-effect);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.icons a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.icons a:hover::before {
+    transform: translateX(100%);
+}
+
+.icons a:hover {
+    transform: translateY(-5px) scale(1.1);
+    background: var(--glass-effect-hover);
+    box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(188, 188, 188, 0.2);
+}
+
+.icons img {
+    display: block;
+    filter: 
+        brightness(0.8) 
+        contrast(1.1)
+        grayscale(20%);
+    transition: filter 0.3s ease;
+}
+
+.icons a:hover img {
+    filter: 
+        brightness(1.2) 
+        contrast(1.3)
+        grayscale(0%);
+}
