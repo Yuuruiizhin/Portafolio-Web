@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YSD - Yuuruii</title>
+    <title>YWD - Yuuruii</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="resources/css/ysd.css">
+    <link rel="stylesheet" href="resources/css/yrz_buttons.css">
+    <link rel="website icon" href="resources/img/ywd.png" type="image/x-icon">
 </head>
 <body>
 
     <header>
-        <img src="resources/img/ysd.png" alt="logo" id="icono">
+        <h1>Yuuruii's Web Development</h1>
         <ul class="nav justify-content-center">
         <li class="nav-item">
             <a class="nav-link active" aria-current="page">Inicio</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="resources/html/aboutme.html">Sobre Mi</a>
+            <a class="nav-link" href="resources/html/projectos.html">Projectos</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="resources/html/emprendimientos.html">Emprendimientos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="resources/html/galeria.html">Galería</a>
         </ul>
         <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -32,14 +29,114 @@
     </header>
     
     <!-- Main body -->
-    <div class="yuuruii">
-        <h1>Yuuruii's Software Development</h1>
+
+    <!-- Menu Hamburguesa -->
+
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Atajos</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+            <div id="scrollspy" class="d-flex flex-column gap-2 text-center">
+    <button class="Minimalist-Simple-Button" data-scroll="#about_ywd">Que es YWD</button>
+    <button class="Minimalist-Simple-Button" data-scroll="#objetivo">Objetivo</button>
+    <button class="Minimalist-Simple-Button" data-scroll="#seguro_y_garantia">Seguro Y Garantia</button>
+    <button class="Minimalist-Simple-Button" data-scroll="#propuesta">Propuesta</button>
+    <button class="Minimalist-Simple-Button" data-scroll="#contacto">Contacto</button>
+    <button class="Minimalist-Simple-Button" data-scroll="#social">Redes Sociales</button>
+    </div>
+    </div>
     </div>
 
+    <!-- Secciones -->
+    <br>
+    <div class="yuuruii" id="about_ywd">
+        <h2>¿Que es "YWD"?</h2>
+        <div class="txt-cont">
+            <p>YWD (Yuuruii's Web Development) es un emprendimiento personal dedicado al desarrollo de Paginas Web. Fundado por Yuuruii, este proyecto nace de la pasión por la programación y el deseo de crear Medios innovadoras que faciliten la vida de las personas y mejoren la eficiencia en diversos ámbitos.</p>
+            <p>El objetivo principal de YWD es ofrecer productos de alta calidad que respondan a las necesidades del mercado actual, abarcando desde paginas web para ventas y emprendimiento hasta presentaciones personales. Con un enfoque en la usabilidad y la experiencia del usuario, YWD se esfuerza por desarrollar soluciones que sean intuitivas, funcionales y adaptables a diferentes plataformas.</p>
+            <p>Además del desarrollo Web, YWD también se dedica a la consultoría, ayudando a empresas y particulares a identificar oportunidades de mejora mediante la implementación de nueva medidas y difusion web. Con un compromiso firme con la innovación y la excelencia, YWD busca posicionarse como un referente en el ámbito del desarrollo de Web, ofreciendo siempre un servicio personalizado y orientado a resultados.</p>
+        </div> 
+    </div>
 
+    <div class="yuuruii" id="objetivo">
+        <h3>Objetivo</h3>
+        <div class="txt-cont">
+            <p>El objetivo de YWD es desarrollar Websites innovadoras y de alta calidad que satisfaga las necesidades de los usuarios, mejorando su experiencia digital y facilitando sus actividades diarias. A través de soluciones tecnológicas personalizadas, YWD busca optimizar difusion, aumentar la eficiencia y contribuir al crecimiento de sus clientes.</p>
+        </div>
+    </div>
+
+    <div class="yuuruii" id="seguro_y_garantia">
+        <h3>Seguro & Garantia</h3>
+        <div class="txt-cont">
+            <p>En YWD, la seguridad y la garantía son pilares fundamentales de nuestro compromiso con los clientes. Nos esforzamos por implementar las mejores prácticas en cada etapa del desarrollo Web, asegurando que nuestros productos sean comodos y confiables. Además, ofrecemos garantías claras y transparentes para nuestros servicios, brindando a los clientes la tranquilidad de saber que cuentan con nuestro respaldo en caso de cualquier inconveniente. Nuestro objetivo es construir relaciones duraderas basadas en la confianza y la satisfacción del cliente.</p>
+        </div>
+    </div>
+
+    <div class="yuuruii" id="propuesta">
+        <h3>Propuesta de valor</h3>
+        <div class="txt-cont">
+            <p>
+                Nuestra propuesta de valor se basa en la innovación constante y la flexibilidad para adaptarnos a los cambios tecnológicos, utilizando herramientas modernas como Bootstrap y la inteligencia artificial. Esto nos permite desarrollar soluciones atractivas, útiles y confiables en tiempos reducidos, optimizando procesos y minimizando el impacto en las operaciones de nuestros clientes. Apostamos por la integración de nuevas tecnologías para ofrecer productos que combinan estética, funcionalidad y eficiencia, garantizando resultados de alta calidad y una experiencia superior para el usuario.
+            </p>
+        </div>
+    </div>
+        <br>
+
+    <div class="yuuruii">
+        <h3> Portafolio - Projectos </h3>
+        <div class="cont-lateral">
+                <!-- ICT WEBSITE -->
+                <div class="card card-dark h-100" style="width: 18rem;"> 
+                <img src="resources/img/projectos/ictwebsite.png" class="card-img-top projectos-img" alt="ICT">
+                <div class="card-body d-flex flex-column"> 
+                    <h5 class="card-title projectos-title">ICT Website</h5>
+                    <p class="card-text">Projecto de sitio web utilizando bootstrap y php minimante para la comodidad de el proximo desarrollador</p>
+                    <a href="https://github.com/Yuuruiizhin/ict" class="mt-auto btn btn-danger">Ver En github</a>
+                </div>
+                </div>
+                
+                <!-- Yuuruii Portafolio -->
+                <div class="card card-dark h-100" style="width: 18rem;"> 
+                <img src="resources/img/projectos/yts.png" class="card-img-top projectos-img" alt="Yuuruii">
+                <div class="card-body d-flex flex-column"> 
+                    <h5 class="card-title projectos-title">Yuuruii Suite</h5>
+                    <p class="card-text">Portafolio Web, YTS, YWD, YSD Utilizando bootsrap para su responsividad y js para funciones.</p>
+                    <a href="https://github.com/Yuuruiizhin/Portafolio-Web" class="mt-auto btn btn-danger">Ver En github</a>
+                </div>
+                </div>
+
+                <!-- Phantom DBM -->
+                <div class="card card-dark h-100" style="width: 18rem;"> 
+                <img src="resources/img/projectos/phantomw.png" class="card-img-top projectos-img" alt="Phantom DBM">
+                <div class="card-body d-flex flex-column"> 
+                    <h5 class="card-title projectos-title">Phantom DBM</h5>
+                    <p class="card-text">Projecto de gestor de base de datos web con PY, HTML, JS, CSS, Boostrap, ETC para feria tecnologica de ICT</p>
+                    <a href="https://github.com/Yuuruiizhin/PhantomDBM/releases" class="mt-auto btn btn-danger">Ver En github</a>
+                </div>
+                </div>
+        </div>
+    </div>
+
+        <br>
+    <div class="yuuruii" id="contacto">
+        <h3>Contacto</h3>
+        <div class="txt-cont">
+            <ul>
+                <li>Whatsapp: +56 9 8233 4100</li>
+                <li>Email: contactoyuuruiival@gmail.com</li>
+                <li>Discord: yuuruiizhin</li>
+            </ul>
+        </div>
+    </div>
+        <br>
+
+
+    <!-- FINAL -->
     <footer>
         <p>&copy Todos los derechos reservados - Yuuruii </p>
-        <div class="icons" id="Contacto">
+        <div class="icons" id="social">
             <a href="https://youtube.com/@ImYuuruii" target="_blank" rel="noopener noreferrer">
                 <img src="resources//img/social/yconw.svg" alt="YouTube" width="50" height="50">
             </a>
@@ -60,5 +157,6 @@
 
     <!-- Scripts -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     <script src="resources/js/offcanvas.js"></script>
 </body>
 </html>
