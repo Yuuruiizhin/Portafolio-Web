@@ -147,7 +147,7 @@
   height: 254px;
   perspective: 1000px;
   font-family: sans-serif;
-  padding: 10px;
+  margin: 0.5rem;
 }
 
 .FLIPCTitle {
@@ -306,4 +306,75 @@
     0 0 14px #674377,
     0 0 28px #704b7e,
     0 0 45px #50355f;
+}
+
+/* Estilos para la sección de contacto */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    border: 1px solid rgba(255, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(161, 0, 0, 0.2);
+    border-color: rgba(161, 0, 0, 0.3);
+}
+
+.contact-label {
+    font-weight: 600;
+    min-width: 100px;
+    color: rgba(161, 0, 0, 0.95);
+}
+
+.contact-value {
+    color: white;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.contact-value:hover {
+    color: rgba(161, 0, 0, 0.95);
+}
+
+/* Ajustes responsive para las flip cards */
+@media (max-width: 768px) {
+    .contact-info {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .flip-card {
+        width: 170px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info {
+        gap: 0.75rem;
+        padding: 0.75rem;
+    }
+
+    .flip-card {
+        width: 160px;
+        height: 220px;
+    }
 }
