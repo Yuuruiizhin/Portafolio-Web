@@ -73,7 +73,6 @@
     
 }
 
-
 /* --- Estructura ---- */
 body {
     background-color: rgba(27, 27, 27, 0.932);
@@ -102,6 +101,12 @@ footer {
     font-size: 2vh;
 }
 
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    width: 80%;
+    margin: auto;
+}
+
 /* Contenedores */
 .txt-cont{
     text-align: justify;
@@ -125,20 +130,18 @@ footer {
 
 .cont-skills{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /*  columnas */
-    gap: 2em;
-    margin: auto;
-    margin-bottom: 3vh;
-    align-items: stretch;
-    padding: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
 }
 
 .yuuruii {
     background-color: rgba(27, 27, 27, 0.678);
     border-radius: 5px;
-    width: 90%;
-    align-content: center;
-    height: auto;
+    width: 95%;
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
 }
 
 .yuuruii h1{
@@ -229,6 +232,15 @@ footer {
     margin-top: 1vh;
 }
 
+#services {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vh;
+    margin-bottom: 1vh;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
 /* Iconos de redes sociales*/
 
 /* ===== ICONOS DE REDES SOCIALES ===== */
@@ -289,4 +301,423 @@ footer {
         brightness(1.2) 
         contrast(1.3)
         grayscale(0%);
+}
+
+/* Mejoras para las tarjetas de habilidades */
+.skills {
+    background-color: rgb(26, 26, 26);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+    height: 120px; /* Altura fija para todas las tarjetas */
+}
+
+.skills svg {
+    min-width: 64px; /* Evita que el SVG se encoja */
+    height: 64px;
+    margin: 0;
+    color: rgba(161, 0, 0, 0.95);
+    transition: all 0.3s ease;
+}
+
+.skill-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+
+/* Niveles con mejor espaciado */
+.high, .mid, .low {
+    margin-left: auto; /* Empuja el nivel al extremo derecho */
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.3rem 0;
+}
+
+/* Hover effects mejorados */
+.skills:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(161, 0, 0, 0.3);
+}
+
+.skills:hover svg {
+    transform: scale(1.1);
+}
+
+/* Estilos modernizados para las skills cards */
+.skills {
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    border: 1px solid rgba(255, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, 
+        rgba(161, 0, 0, 0.05) 0%,
+        rgba(161, 0, 0, 0) 100%);
+    z-index: 1;
+}
+
+.skills svg {
+    min-width: 64px;
+    height: 64px;
+    color: rgba(161, 0, 0, 0.95);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 0 8px rgba(161, 0, 0, 0.3));
+}
+
+.skill-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(161, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+/* Niveles con estilo moderno */
+.high, .mid, .low {
+    margin-left: auto;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+.high {
+    background: linear-gradient(45deg, #1a472a, #2d8653);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(45, 134, 83, 0.3);
+}
+
+.mid {
+    background: linear-gradient(45deg, #1a365d, #2b6cb0);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(43, 108, 176, 0.3);
+}
+
+.low {
+    background: linear-gradient(45deg, #822727, #c53030);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(197, 48, 48, 0.3);
+}
+
+/* Efectos hover mejorados */
+.skills:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(161, 0, 0, 0.2);
+    border-color: rgba(161, 0, 0, 0.3);
+}
+
+.skills:hover::before {
+    background: linear-gradient(45deg, 
+        rgba(161, 0, 0, 0.1) 0%,
+        rgba(161, 0, 0, 0.05) 100%);
+}
+
+.skills:hover svg {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 12px rgba(161, 0, 0, 0.5));
+}
+
+/* Contenedor de emprendimientos */
+.emprendimientos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+/* Tarjetas de emprendimientos */
+.emprendimiento-card {
+    background-color: rgb(26, 26, 26);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    height: 100%;
+}
+
+.emprendimiento-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(161, 0, 0, 0.5);
+}
+
+.emprendimiento-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.emprendimiento-card h3 {
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Contenedor de proyectos */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+/* Tarjetas de proyectos */
+.project-card {
+    background-color: rgb(26, 26, 26);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(161, 0, 0, 0.5);
+}
+
+.project-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-color: rgba(161, 0, 0, 0.95);
+}
+
+.project-description {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.project-link {
+    align-self: flex-start;
+    background-color: rgba(161, 0, 0, 0.95);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: rgba(224, 1, 1, 0.836);
+    transform: translateY(-2px);
+}
+
+/* Ajustes del contenedor principal para móvil */
+.yuuruii {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    margin: 1rem 0;
+}
+
+/* Contenedor de habilidades ajustado */
+.cont-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    padding: 0.5rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Tarjetas de habilidades optimizadas */
+.skills {
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    border: 1px solid rgba(255, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 110px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Ajustes responsive mejorados */
+@media (max-width: 768px) {
+    .cont-skills {
+        grid-template-columns: 1fr;
+        width: 90%;
+        max-width: 450px;
+        gap: 1rem;
+    }
+    
+    .skills {
+        height: 100px;
+        padding: 1rem;
+    }
+    
+    .skill-name {
+        font-size: 1.1rem;
+    }
+    
+    .high, .mid, .low {
+        font-size: 0.9rem;
+        min-width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cont-skills {
+        width: 92%;
+        padding: 0.5rem;
+    }
+    
+    .skills {
+        height: 90px;
+    }
+    
+    .skills svg {
+        min-width: 42px;
+        height: 42px;
+    }
+    
+    .skill-name {
+        font-size: 1rem;
+    }
+}
+
+/* Ajustes específicos para pantallas muy pequeñas */
+@media (max-width: 360px) {
+    .cont-skills {
+        width: 95%;
+    }
+    
+    .skills {
+        height: 85px;
+        padding: 0.75rem;
+    }
+    
+    .skills svg {
+        min-width: 36px;
+        height: 36px;
+    }
+}
+
+/* Ajustes adicionales para mejor simetría */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.card-text {
+    text-align: center;
+    margin: 0;
+}
+
+/* Ajustes para el contenedor de tarjetas */
+.row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Estilos para las tarjetas */
+.tarjeta {
+    background-color: rgb(26, 26, 26);
+    border-radius: 10px;
+    padding: 1.25rem;
+    transition: all 0.3s ease;
+    height: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#tarjeta-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tarjeta h3 {
+    text-align: center;
+    margin: 1rem 0;
+    color: white;
+}
+
+.tarjeta .txt-cont {
+    text-align: center;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .col-12 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tarjeta {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .yuuruii {
+        padding: 1rem 0.5rem;
+    }
+    
+    .tarjeta {
+        max-width: 320px;
+    }
+
+    #tarjeta-img {
+        height: 180px;
+    }
 }

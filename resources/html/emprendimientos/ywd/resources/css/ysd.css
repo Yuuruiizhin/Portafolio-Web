@@ -111,6 +111,16 @@ footer {
     font-size: 2vh;
 }
 
+svg {
+    align-self: center;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    width: 80%;
+    margin: auto;
+}
+
 /* Contenedores */
 .txt-cont{
     text-align: justify;

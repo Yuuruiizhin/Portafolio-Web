@@ -68,6 +68,14 @@
     font-weight: bold;
 }
 
+.offcanvas-body {
+    background-color: rgb(24, 24, 24);
+}
+
+.offcanvas-header {
+    background-color: rgb(24, 24, 24);
+}
+
 .offcanvas-title{
     font-size: 3vh;
     font-weight: bold;
@@ -109,6 +117,12 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 2vh;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    width: 80%;
+    margin: auto;
 }
 
 /* Contenedores */
